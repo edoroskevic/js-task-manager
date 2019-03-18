@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<title>task manager</title>
+
+	<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css'>
+
+	<style>
+		.container{ width: 50%; }
+		button{ width: 100%; }
+		input, th, td{ text-align: center; }
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<h3>Task Manager</h3>
+		<div class='row'>
+			<div class='input-field col s12'>
+				<input id='task' type='text'>
+				<label for='tasl'>Enter task</label>
+			</div>
+		</div>			
+		<div class='row'>
+			<div class='input-field col s6'>
+				<input class='datepicker' id='task-date' type='text'>
+				<label for='task-date'>Select date</label>
+			</div>
+			<div class='input-field col s6'>
+				<input class='timepicker' id='task-time' type='text'>
+				<label for='task-time'>Select time</label>
+			</div>
+			<button class='btn waves-effect waves-light' id='submit'>submit</button>
+			<table id='task-list'>
+				<tr>
+					<th>Task</th>
+					<th>Date</th>
+					<th>Time</th>
+					<th></th>
+				</tr>	
+			</table>	
+			<button class='btn waves-effect waves-light' id='clear'>clear</button>
+		</div>
+
+	</div>
+		
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>
